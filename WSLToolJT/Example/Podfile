@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'WSLToolJT_Example' do
+  pod 'WSLToolJT', :path => '../'
+
+  target 'WSLToolJT_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

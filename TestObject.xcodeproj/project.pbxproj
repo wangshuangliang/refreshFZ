@@ -15,6 +15,9 @@
 		E8183E7F210EA37E0026E48C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8183E7E210EA37E0026E48C /* main.m */; };
 		E8183E89210EA37E0026E48C /* TestObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8183E88210EA37E0026E48C /* TestObjectTests.m */; };
 		E8183E94210EA37E0026E48C /* TestObjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8183E93210EA37E0026E48C /* TestObjectUITests.m */; };
+		E8255C71211547CF00D602AD /* UIScrollView+WSLScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8255C70211547CF00D602AD /* UIScrollView+WSLScrollView.m */; };
+		E8255C7521157EA900D602AD /* ModelBase.m in Sources */ = {isa = PBXBuildFile; fileRef = E8255C7421157EA900D602AD /* ModelBase.m */; };
+		F4A9AA4FEF22ED34C950F91A /* libPods-TestObject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D7F14B5099F66F1927366E4 /* libPods-TestObject.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D7F14B5099F66F1927366E4 /* libPods-TestObject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestObject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3BAC308393DF6AFEF992AEF /* Pods-TestObject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestObject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestObject/Pods-TestObject.debug.xcconfig"; sourceTree = "<group>"; };
+		BE75BEBCA2F7CCE5B78989A7 /* Pods-TestObject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestObject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestObject/Pods-TestObject.release.xcconfig"; sourceTree = "<group>"; };
 		E8183E6C210EA37D0026E48C /* TestObject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestObject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8183E6F210EA37D0026E48C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E8183E70210EA37D0026E48C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +57,10 @@
 		E8183E8F210EA37E0026E48C /* TestObjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestObjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8183E93210EA37E0026E48C /* TestObjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObjectUITests.m; sourceTree = "<group>"; };
 		E8183E95210EA37E0026E48C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8255C6F211547CF00D602AD /* UIScrollView+WSLScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+WSLScrollView.h"; sourceTree = "<group>"; };
+		E8255C70211547CF00D602AD /* UIScrollView+WSLScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+WSLScrollView.m"; sourceTree = "<group>"; };
+		E8255C7321157EA900D602AD /* ModelBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelBase.h; sourceTree = "<group>"; };
+		E8255C7421157EA900D602AD /* ModelBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelBase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4A9AA4FEF22ED34C950F91A /* libPods-TestObject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +89,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B6F4F5A7FE6439154427FAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D7F14B5099F66F1927366E4 /* libPods-TestObject.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACF9FA62A769C676C2731F53 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3BAC308393DF6AFEF992AEF /* Pods-TestObject.debug.xcconfig */,
+				BE75BEBCA2F7CCE5B78989A7 /* Pods-TestObject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E8183E63210EA37D0026E48C = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +113,8 @@
 				E8183E87210EA37E0026E48C /* TestObjectTests */,
 				E8183E92210EA37E0026E48C /* TestObjectUITests */,
 				E8183E6D210EA37D0026E48C /* Products */,
+				ACF9FA62A769C676C2731F53 /* Pods */,
+				6B6F4F5A7FE6439154427FAE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +135,10 @@
 				E8183E70210EA37D0026E48C /* AppDelegate.m */,
 				E8183E72210EA37D0026E48C /* ViewController.h */,
 				E8183E73210EA37D0026E48C /* ViewController.m */,
+				E8255C7321157EA900D602AD /* ModelBase.h */,
+				E8255C7421157EA900D602AD /* ModelBase.m */,
+				E8255C6F211547CF00D602AD /* UIScrollView+WSLScrollView.h */,
+				E8255C70211547CF00D602AD /* UIScrollView+WSLScrollView.m */,
 				E8183E75210EA37D0026E48C /* Main.storyboard */,
 				E8183E78210EA37E0026E48C /* Assets.xcassets */,
 				E8183E7A210EA37E0026E48C /* LaunchScreen.storyboard */,
@@ -139,9 +173,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8183E98210EA37E0026E48C /* Build configuration list for PBXNativeTarget "TestObject" */;
 			buildPhases = (
+				C80A2C15C812B381C305200D /* [CP] Check Pods Manifest.lock */,
 				E8183E68210EA37D0026E48C /* Sources */,
 				E8183E69210EA37D0026E48C /* Frameworks */,
 				E8183E6A210EA37D0026E48C /* Resources */,
+				546BB276A747B2BE0FBC7661 /* [CP] Embed Pods Frameworks */,
+				0879E515EAB4E866176ECA08 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,11 +294,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0879E515EAB4E866176ECA08 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TestObject/Pods-TestObject-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestObject/Pods-TestObject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		546BB276A747B2BE0FBC7661 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestObject/Pods-TestObject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C80A2C15C812B381C305200D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestObject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E8183E68210EA37D0026E48C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8255C7521157EA900D602AD /* ModelBase.m in Sources */,
+				E8255C71211547CF00D602AD /* UIScrollView+WSLScrollView.m in Sources */,
 				E8183E74210EA37D0026E48C /* ViewController.m in Sources */,
 				E8183E7F210EA37E0026E48C /* main.m in Sources */,
 				E8183E71210EA37D0026E48C /* AppDelegate.m in Sources */,
@@ -431,14 +524,20 @@
 		};
 		E8183E99210EA37E0026E48C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3BAC308393DF6AFEF992AEF /* Pods-TestObject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W8DEHYS2P3;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TestObject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WSLToolJT",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = WSl.TestObject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -448,14 +547,20 @@
 		};
 		E8183E9A210EA37E0026E48C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE75BEBCA2F7CCE5B78989A7 /* Pods-TestObject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W8DEHYS2P3;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TestObject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WSLToolJT",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = WSl.TestObject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
